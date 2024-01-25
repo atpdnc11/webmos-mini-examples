@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "author": "Arvind Patil",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-wemos-s2-mini", "id": "esp", "top": 27.74, "left": 129.6, "attrs": {} },
+    { "type": "wokwi-ili9341", "id": "lcd1", "top": -85.6, "left": -134.7, "attrs": {} }
+  ],
+  "connections": [
+    [ "lcd1:VCC", "uno:5V", "red", [ "v19.2", "h297.6" ] ],
+    [ "lcd1:GND", "uno:GND.2", "black", [ "v28.8", "h307.2" ] ],
+    [ "lcd1:CS", "uno:10", "purple", [ "v38.4", "h288" ] ],
+    [ "lcd1:D/C", "uno:9", "yellow", [ "v48", "h268.8", "v-230.4" ] ],
+    [ "lcd1:MOSI", "uno:11", "white", [ "v57.6", "h230.39" ] ],
+    [ "lcd1:SCK", "uno:13", "gold", [ "v9.6", "h182.39", "v-172.8", "h28.8" ] ],
+    [ "lcd1:VCC", "esp:3V3", "red", [ "v48", "h192", "v-124.8" ] ],
+    [ "lcd1:GND", "esp:GND.1", "black", [ "v38.4", "h163.2", "v-48", "h105.6", "v-67.2" ] ],
+    [ "lcd1:CS", "esp:12", "blue", [ "v76.8", "h249.6", "v-9.6" ] ],
+    [ "lcd1:RST", "esp:8", "yellow", [ "v28.8", "h182.4" ] ],
+    [ "lcd1:D/C", "esp:14", "violet", [ "v19.2", "h96" ] ],
+    [ "lcd1:MOSI", "esp:11(MOSI)", "green", [ "v9.6", "h153.59", "v-105.6" ] ],
+    [ "lcd1:SCK", "esp:7(SCK)", "green", [ "v67.2", "h124.79", "v-182.4" ] ],
+    [ "lcd1:MISO", "esp:9(MISO)", "green", [ "v57.6", "h76.79", "v-153.6" ] ]
+  ],
+  "dependencies": {}
+}
